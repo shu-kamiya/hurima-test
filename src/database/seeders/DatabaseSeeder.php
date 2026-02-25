@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\ItemsTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +14,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory()->create([
+            'id' => 1,
+            'name' => 'testuser',
+            'email' => 'test@example.com',
+            'password' => bcrypt('password'),
+        ]);
+
+        $this->call([
+            ItemsTableSeeder::class,
+        ]);
     }
 }
