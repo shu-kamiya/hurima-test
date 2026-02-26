@@ -1,7 +1,7 @@
 # 環境構築
 
 ## Dockerビルド
-- git clone <リポジトリURL>
+- git clone <git@github.com:shu-kamiya/hurima-test.git>
 - docker-compose up -d --build
 
 ## Laravel環境構築
@@ -11,10 +11,16 @@
 - php artisan key:generate
 - php artisan migrate
 - php artisan storage:link
+- php artisan migrate --seed
 
 ## 開発環境
 - アプリ：http://localhost/
 - phpMyAdmin：http://localhost:8080/
+
+## ER図
+
+![ER図](docs/er-diagram.png)
+
 
 ## 使用技術
 - PHP 8.1.33
