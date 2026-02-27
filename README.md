@@ -19,7 +19,7 @@
 
 ## ER図
 
-![ER図](src/docs/er-diagram.png)
+![ER図](er-diagram.png)
 
 
 ## 使用技術
