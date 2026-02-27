@@ -18,7 +18,7 @@
 - phpMyAdmin：http://localhost:8080/
 
 ## ER図
-- er-diagram.png を参照
+- .draw.io.png を参照
 
 ## 使用技術
 - PHP 8.1.33
